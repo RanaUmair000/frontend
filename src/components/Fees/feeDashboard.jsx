@@ -3,7 +3,7 @@ import { FiDollarSign, FiUsers, FiCalendar, FiSearch, FiFileText, FiTrendingUp }
 import Modal from '../Modal/modal';
 import GenerateAnnualModal from './Modals/generateAnnualModal';
 import GenerateMonthlyModal from './Modals/generateMonthlyModal';
-import CreateStudentInvoiceModal from './Modals/createStudentInvoiceModalreateStudentInvoiceModal';
+import CreateStudentInvoiceModal from './Modals/createStudentInvoiceModal';
 import CreateEventInvoiceModal from './Modals/createEventInvoiceModal';
 import CheckFeeStatusModal from './Modals/checkFeeStatusModal';
 import { useNavigate } from 'react-router-dom';
