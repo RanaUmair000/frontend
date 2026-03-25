@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Loader from './common/Loader/index.tsx';
-import PageTitle from './components/PageTitle.js';
-import SignIn from './pages/Authentication/SignIn.js';
-import SignUp from './pages/Authentication/SignUp.js';
-import Calendar from './pages/Calendar.js';
+import PageTitle from './components/PageTitle.tsx';
+import SignIn from './pages/Authentication/SignIn.tsx';
+import SignUp from './pages/Authentication/SignUp.tsx';
+import Calendar from './pages/Calendar.tsx';
 // @ts-ignore
-import Students from './pages/Students/Students.js';
-import Courses from './pages/Courses/Courses.js';
-import Classess from './pages/Classess/Classes.js';
+import Students from './pages/Students/Students.tsx';
+import Courses from './pages/Courses/Courses.tsx';
+import Classess from './pages/Classess/Classes.tsx';
 import Teachers from './pages/Teachers/Teachers.jsx';
 import FeeDashboard from './components/Fees/feeDashboard.jsx';
 import InvoiceList from './components/Fees/invoiceList.jsx';
@@ -35,16 +35,16 @@ import SellItem         from './components/Stocks/SellItem.jsx';
 import SalesHistory     from './components/Stocks/SalesHistory.jsx';
 
 
-import Chart from './pages/Chart.js';
-import ECommerce from './pages/Dashboard/ECommerce.js';
-import FormElements from './pages/Form/FormElements.js';
-import FormLayout from './pages/Form/FormLayout.js';
-import Profile from './pages/Profile.js';
-import Settings from './pages/Settings.js';
-import Tables from './pages/Tables.js';
-import Alerts from './pages/UiElements/Alerts.js';
-import Buttons from './pages/UiElements/Buttons.js';
-import DefaultLayout from './layout/DefaultLayout.js';
+import Chart from './pages/Chart.tsx';
+import ECommerce from './pages/Dashboard/ECommerce.tsx';
+import FormElements from './pages/Form/FormElements.tsx';
+import FormLayout from './pages/Form/FormLayout.tsx';
+import Profile from './pages/Profile.tsx';
+import Settings from './pages/Settings.tsx';
+import Tables from './pages/Tables.tsx';
+import Alerts from './pages/UiElements/Alerts.tsx';
+import Buttons from './pages/UiElements/Buttons.tsx';
+import DefaultLayout from './layout/DefaultLayout.tsx';
 
 import TeacherLayout from './components/Teachers/TeacherLayout.jsx';
 import TeacherDashboard from './pages/Teachers/TeacherDashboard.jsx';
