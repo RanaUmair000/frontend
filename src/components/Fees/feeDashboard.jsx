@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FiDollarSign, FiUsers, FiCalendar, FiSearch, FiFileText, FiTrendingUp } from 'react-icons/fi';
 import Modal from '../Modal/modal';
 import GenerateAnnualModal from './Modals/generateAnnualModal';
-import GenerateMonthlyModal from './Modals/GenerateMonthlyModal';
+import GenerateMonthlyModal from './Modals/generateMonthlyModal';
 import CreateStudentInvoiceModal from './Modals/CreateStudentInvoiceModal';
 import CreateEventInvoiceModal from './Modals/CreateEventInvoiceModal';
 import CheckFeeStatusModal from './Modals/CheckFeeStatusModal';
