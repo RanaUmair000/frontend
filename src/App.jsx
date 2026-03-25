@@ -26,7 +26,7 @@ import DiaryPage from './pages/Diary.jsx';
 import TeacherAttendanceAdmin from './pages/TeacherAttendanceAdminPage.jsx';
 
 import StockDashboard   from './components/Stocks/StockDashboard.jsx';
-import StockItemsList   from './components/Stocks/StockItemsList.jsx';
+import StockItemsList   from './components/Stocks/StockItemslist.jsx';
 import AddEditStockItem from './components/Stocks/AddEditStockItem.jsx';
 import SuppliersList    from './components/Stocks/SuppliersList.jsx';
 import AddEditSupplier  from './components/Stocks/AddEditSupplier.jsx';
