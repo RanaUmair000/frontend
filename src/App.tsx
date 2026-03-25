@@ -11,7 +11,7 @@ import Students from './pages/Students/Students';
 import Courses from './pages/Courses/Courses';
 import Classess from './pages/Classess/Classes';
 import Teachers from './pages/Teachers/Teachers';
-import FeeDashboard from './Components/Fees/feeDashboard';
+import FeeDashboard from './components/Fees/feeDashboard';
 import InvoiceList from './components/Fees/invoiceList';
 import PaymentHistory from './components/Fees/paymentHistory';
 import UnpaidFeesList from './components/Fees/unpaidStudents';
