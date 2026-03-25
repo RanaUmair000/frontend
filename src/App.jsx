@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
-import Loader from './common/Loader/index.js';
+import Loader from './common/Loader/index.tsx';
 import PageTitle from './components/PageTitle.js';
 import SignIn from './pages/Authentication/SignIn.js';
 import SignUp from './pages/Authentication/SignUp.js';
