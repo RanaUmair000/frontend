@@ -3,9 +3,9 @@ import { FiDollarSign, FiUsers, FiCalendar, FiSearch, FiFileText, FiTrendingUp }
 import Modal from '../Modal/modal';
 import GenerateAnnualModal from './Modals/generateAnnualModal';
 import GenerateMonthlyModal from './Modals/generateMonthlyModal';
-import CreateStudentInvoiceModal from './Modals/CreateStudentInvoiceModal';
-import CreateEventInvoiceModal from './Modals/CreateEventInvoiceModal';
-import CheckFeeStatusModal from './Modals/CheckFeeStatusModal';
+import CreateStudentInvoiceModal from './Modals/createStudentInvoiceModalreateStudentInvoiceModal';
+import CreateEventInvoiceModal from './Modals/createEventInvoiceModal';
+import CheckFeeStatusModal from './Modals/checkFeeStatusModal';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 const apiUrl = import.meta.env.VITE_API_URL;
