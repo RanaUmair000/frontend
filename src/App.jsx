@@ -60,7 +60,7 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import TeacherAttendancePage from "./pages/Teachers/teacherAttendancePage.jsx";
 
 function App() {
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState(true);
   const { pathname } = useLocation();
 
   useEffect(() => {
