@@ -239,6 +239,10 @@ span.flatpickr-weekday,
   background: transparent;
 }
 
+main{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 ::-webkit-scrollbar-thumb {
   background-color: #a0aec0;
   border-radius: 9999px;
@@ -931,3 +935,22 @@ textarea.form-input { resize: vertical; min-height: 80px; }
 .dark .summary-banner__item { border-color: var(--strokedark); }
 .dark .summary-banner__value { color: #fff; }
 .dark .stat-card__value { color: #fff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
