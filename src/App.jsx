@@ -221,7 +221,7 @@ function AppRouter() {
               element={
                 <>
                   <ProtectedRoute allowedRoles={["admin"]}>
-                    <PageTitle title="Attendence | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                    <PageTitle title="Attendence | Oxford Progressive - School Management System" />
                     <AttendanceManagementSystem />
                   </ProtectedRoute>
                 </>
@@ -233,7 +233,7 @@ function AppRouter() {
               element={
                 <>
                   <ProtectedRoute allowedRoles={["admin"]}>
-                    <PageTitle title="TimeTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                    <PageTitle title="TimeTable | Oxford Progressive - School Management System" />
                     <Timeslots />
                   </ProtectedRoute>
                 </>
@@ -244,7 +244,7 @@ function AppRouter() {
               element={
                 <>
                   <ProtectedRoute allowedRoles={["admin"]}>
-                    <PageTitle title="TimeTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                    <PageTitle title="TimeTable | Oxford Progressive - School Management System" />
                     <StudentTimetableWidget />
                   </ProtectedRoute>
                 </>
@@ -255,7 +255,7 @@ function AppRouter() {
               element={
                 <>
                   <ProtectedRoute allowedRoles={["admin"]}>
-                    <PageTitle title="TimeTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                    <PageTitle title="TimeTable | Oxford Progressive - School Management System" />
                     <TeacherTimetableWidget />
                   </ProtectedRoute>
                 </>
@@ -266,17 +266,27 @@ function AppRouter() {
               element={
                 <>
                   <ProtectedRoute allowedRoles={["admin"]}>
-                    <PageTitle title="TimeTable | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                    <PageTitle title="TimeTable | Oxford Progressive - School Management System" />
                     <TimetableBuilder />
                   </ProtectedRoute>
                 </>
               }
             />
             <Route
-              index
+              path="/dashboard"
               element={
                 <>
-                  <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Dashboard | Oxford Progressive - School Management System" />
+                  <ECommerce />
+                </>
+              }
+            />
+
+            <Route
+              path="/"
+              element={
+                <>
+                  <PageTitle title="Dashboard | Oxford Progressive - School Management System" />
                   <ECommerce />
                 </>
               }
@@ -285,7 +295,7 @@ function AppRouter() {
               path="/calendar"
               element={
                 <>
-                  <PageTitle title="Calendar | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Calendar | Oxford Progressive - School Management System" />
                   <Calendar />
                 </>
               }
@@ -620,7 +630,7 @@ function AppRouter() {
               path="/profile"
               element={
                 <>
-                  <PageTitle title="Profile | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Profile | Oxford Progressive - School Management System" />
                   <Profile />
                 </>
               }
@@ -629,7 +639,7 @@ function AppRouter() {
               path="/forms/form-elements"
               element={
                 <>
-                  <PageTitle title="Form Elements | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Form Elements | Oxford Progressive - School Management System" />
                   <FormElements />
                 </>
               }
@@ -638,7 +648,7 @@ function AppRouter() {
               path="/forms/form-layout"
               element={
                 <>
-                  <PageTitle title="Form Layout | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Form Layout | Oxford Progressive - School Management System" />
                   <FormLayout />
                 </>
               }
@@ -647,7 +657,7 @@ function AppRouter() {
               path="/tables"
               element={
                 <>
-                  <PageTitle title="Tables | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Tables | Oxford Progressive - School Management System" />
                   <Tables />
                 </>
               }
@@ -656,7 +666,7 @@ function AppRouter() {
               path="/settings"
               element={
                 <>
-                  <PageTitle title="Settings | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Settings | Oxford Progressive - School Management System" />
                   <Settings />
                 </>
               }
@@ -665,7 +675,7 @@ function AppRouter() {
               path="/chart"
               element={
                 <>
-                  <PageTitle title="Basic Chart | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Basic Chart | Oxford Progressive - School Management System" />
                   <Chart />
                 </>
               }
@@ -674,7 +684,7 @@ function AppRouter() {
               path="/ui/alerts"
               element={
                 <>
-                  <PageTitle title="Alerts | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Alerts | Oxford Progressive - School Management System" />
                   <Alerts />
                 </>
               }
@@ -683,7 +693,7 @@ function AppRouter() {
               path="/ui/buttons"
               element={
                 <>
-                  <PageTitle title="Buttons | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Buttons | Oxford Progressive - School Management System" />
                   <Buttons />
                 </>
               }
@@ -692,7 +702,7 @@ function AppRouter() {
               path="/auth/signin"
               element={
                 <>
-                  <PageTitle title="Signin | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Signin | Oxford Progressive - School Management System" />
                   <SignIn />
                 </>
               }
@@ -701,13 +711,13 @@ function AppRouter() {
               path="/auth/signup"
               element={
                 <>
-                  <PageTitle title="Signup | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                  <PageTitle title="Signup | Oxford Progressive - School Management System" />
                   <SignUp />
                 </>
               }
             />
           </Route>
-        )};
+        )}
       </Routes>
     </>
   );
