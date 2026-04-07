@@ -28,7 +28,7 @@ export default function Profile() {
       try {
         if (!localUser?._id) return;
         const res = await fetch(
-          `http://localhost:5000/api/students/${localUser._id}`,
+          `https://sms-app.bonto.run/api/students/${localUser._id}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         const data = await res.json();

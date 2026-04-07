@@ -195,7 +195,7 @@ export default function AttendancePage() {
         const load = async () => {
             if (!user?._id) return;
             try {
-                const res  = await fetch(`http://localhost:5000/api/students/${user._id}`, {
+                const res  = await fetch(`https://sms-app.bonto.run/api/students/${user._id}`, {
                     headers: { Authorization: `Bearer ${token}` },
                 });
                 const data = await res.json();

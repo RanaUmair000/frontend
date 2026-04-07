@@ -2,7 +2,7 @@
 
 ## Base URL
 ```
-http://localhost:5000/api/timetable
+https://sms-app.bonto.run/api/timetable
 ```
 
 ---
@@ -966,7 +966,7 @@ Exceeded limit response:
 
 ### Create Time Slot
 ```bash
-curl -X POST http://localhost:5000/api/timetable/timeslots \
+curl -X POST https://sms-app.bonto.run/api/timetable/timeslots \
   -H "Content-Type: application/json" \
   -d '{
     "startTime": "08:00",
@@ -978,12 +978,12 @@ curl -X POST http://localhost:5000/api/timetable/timeslots \
 
 ### Get Today's Schedule
 ```bash
-curl -X GET "http://localhost:5000/api/timetable/today/class/CLASS_ID/SECTION_ID?academicYear=2024-2025"
+curl -X GET "https://sms-app.bonto.run/api/timetable/today/class/CLASS_ID/SECTION_ID?academicYear=2024-2025"
 ```
 
 ### Check Conflict
 ```bash
-curl -X POST http://localhost:5000/api/timetable/check-conflict \
+curl -X POST https://sms-app.bonto.run/api/timetable/check-conflict \
   -H "Content-Type: application/json" \
   -d '{
     "teacherId": "TEACHER_ID",

@@ -29,7 +29,7 @@ export default function Timetable() {
     const fetchStudent = async () => {
       try {
         if (!user?._id) return;
-        const res = await fetch(`http://localhost:5000/api/students/${user._id}`, {
+        const res = await fetch(`https://sms-app.bonto.run/api/students/${user._id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();

@@ -20,7 +20,7 @@ const timeSlots = [
 ];
 
 // Bulk create
-await axios.post('http://localhost:5000/api/timetable/timeslots/bulk', { timeSlots });
+await axios.post('https://sms-app.bonto.run/api/timetable/timeslots/bulk', { timeSlots });
 ```
 
 #### Step 2: Create Timetable Entries
@@ -53,7 +53,7 @@ const mondaySchedule = [
 ];
 
 // Bulk create
-await axios.post('http://localhost:5000/api/timetable/entries/bulk', {
+await axios.post('https://sms-app.bonto.run/api/timetable/entries/bulk', {
   entries: mondaySchedule,
   academicYear: "2024-2025"
 });
@@ -65,7 +65,7 @@ await axios.post('http://localhost:5000/api/timetable/entries/bulk', {
 
 ```javascript
 // Copy entire timetable from 2023-2024 to 2024-2025
-const response = await axios.post('http://localhost:5000/api/timetable/copy', {
+const response = await axios.post('https://sms-app.bonto.run/api/timetable/copy', {
   sourceAcademicYear: "2023-2024",
   targetAcademicYear: "2024-2025"
 });
@@ -74,7 +74,7 @@ console.log(`Copied ${response.data.data.created.length} entries`);
 console.log(`Conflicts: ${response.data.data.conflicts.length}`);
 
 // Copy only for a specific class
-const responseClass = await axios.post('http://localhost:5000/api/timetable/copy', {
+const responseClass = await axios.post('https://sms-app.bonto.run/api/timetable/copy', {
   sourceAcademicYear: "2023-2024",
   targetAcademicYear: "2024-2025",
   classId: "60f7b3b3b3b3b3b3b3b3b3b3",
@@ -236,7 +236,7 @@ const checkAndCreate = async (entryData) => {
   try {
     // First, check for conflicts
     const conflictCheck = await axios.post(
-      'http://localhost:5000/api/timetable/check-conflict',
+      'https://sms-app.bonto.run/api/timetable/check-conflict',
       {
         teacherId: entryData.teacherId,
         classId: entryData.classId,
@@ -270,7 +270,7 @@ const checkAndCreate = async (entryData) => {
 
     // No conflicts, proceed to create
     const response = await axios.post(
-      'http://localhost:5000/api/timetable/entries',
+      'https://sms-app.bonto.run/api/timetable/entries',
       entryData
     );
 
@@ -314,7 +314,7 @@ const holidays2024 = [
 ];
 
 // Bulk create holidays
-await axios.post('http://localhost:5000/api/timetable/holidays/bulk', {
+await axios.post('https://sms-app.bonto.run/api/timetable/holidays/bulk', {
   holidays: holidays2024
 });
 
@@ -322,7 +322,7 @@ await axios.post('http://localhost:5000/api/timetable/holidays/bulk', {
 const checkToday = async () => {
   const today = new Date().toISOString().split('T')[0];
   const response = await axios.get(
-    `http://localhost:5000/api/timetable/holidays/check/${today}`,
+    `https://sms-app.bonto.run/api/timetable/holidays/check/${today}`,
     { params: { academicYear: "2024-2025" } }
   );
   
@@ -463,7 +463,7 @@ io.on('connection', (socket) => {
 // Client side
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://sms-app.bonto.run');
 
 socket.on('timetable:refresh', (data) => {
   if (data.classId === currentClass && data.sectionId === currentSection) {

@@ -23,7 +23,7 @@ export default function Courses() {
         if (!user?._id) return;
 
         const res = await fetch(
-          `http://localhost:5000/api/students/${user._id}`,
+          `https://sms-app.bonto.run/api/students/${user._id}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 

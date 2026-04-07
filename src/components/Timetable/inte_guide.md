@@ -89,7 +89,7 @@ frontend/
 Update the API_URL in the service file to match your backend:
 
 ```javascript
-const API_URL = 'http://localhost:5000/api/timetable'; // Adjust port if needed
+const API_URL = 'https://sms-app.bonto.run/api/timetable'; // Adjust port if needed
 ```
 
 ### Step 2: Copy Components
@@ -178,7 +178,7 @@ Create time slots via the TimeSlotManager UI or use the API:
 
 ```javascript
 // Example: Creating default time slots
-POST http://localhost:5000/api/timetable/timeslots/bulk
+POST https://sms-app.bonto.run/api/timetable/timeslots/bulk
 
 Body:
 {

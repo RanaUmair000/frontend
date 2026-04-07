@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext(null);
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL || "https://sms-app.bonto.run/api";
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -45,7 +45,7 @@ export function AuthProvider({ children }) {
 }
 
 export const useAuth = () => useContext(AuthContext);
-export const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+export const API_URL = import.meta.env.VITE_API_URL || "https://sms-app.bonto.run/api";
 
 export function authHeader() {
   const token = localStorage.getItem("student_token");
