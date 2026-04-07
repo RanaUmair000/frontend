@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
 import Loader from './common/Loader/index.tsx';
@@ -168,8 +168,12 @@ function AppRouter() {
           <Route path="profile" element={<Student_Profile />} />
           <Route path="attendance" element={<Student_Attendance />} />
 
+          {/* Catch-all inside /student */}
+          <Route path="*" element={<Navigate to="/student/dashboard" replace />} />
         </Route>
-        <Route path="*" element={<Student_Dashboard />} />
+
+        {/* Catch-all for anything outside /student */}
+        <Route path="*" element={<Navigate to="/student/dashboard" replace />} />
       </Routes>
     );
   }
